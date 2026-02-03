@@ -1,0 +1,47 @@
+/* reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* typography */
+body {
+    font-family: 'Pretendard', system-ui, sans-serif;
+    line-height: 1.5;
+    color: #111;
+    background-color: #fff;
+}
+
+/* elements */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    font-family: inherit;
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+
+/* media */
+img,
+video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* accessibility */
+:focus-visible {
+    outline: 2px solid #005fcc;
+    outline-offset: 2px;
+}

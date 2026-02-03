@@ -1,9 +1,10 @@
+import Home from "./pages/Main/Home.tsx";
 import { Routes, Route } from 'react-router-dom';
 
 function App() {
     return (
         <Routes>
-            <Route path="/" element={<div>Home</div>} />
+            <Route path="/" element={<Home />} />
         </Routes>
     );
 }
