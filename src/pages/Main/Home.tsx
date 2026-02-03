@@ -1,7 +1,9 @@
 import ReactFullpage from '@fullpage/react-fullpage';
-import Hero from '../../components/Hero/Hero';
-import Service from '../../components/Service/Service';
+
 import '../../styles/fullpage.css';
+
+import Service from '../../components/Service/Service';
+import Hero from '../../components/Hero/Hero';
 import { SectionsSchema } from './Home.schema';
 import type { SectionId } from './Home.schema';
 
@@ -21,13 +23,8 @@ export default function Home() {
             credits={{ enabled: false }}
             render={() => (
                 <ReactFullpage.Wrapper>
-                    <div className="section">
-                        <Hero />
-                    </div>
-
-                    <div className="section">
-                        <Service />
-                    </div>
+                    <Hero />
+                    <Service />
                 </ReactFullpage.Wrapper>
             )}
         />
