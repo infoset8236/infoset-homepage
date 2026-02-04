@@ -1,47 +1,127 @@
-/* reset */
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
 
-html,
-body {
-    margin: 0;
-    padding: 0;
+html {
+    font-size: 16px;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-/* typography */
 body {
-    font-family: 'Pretendard', system-ui, sans-serif;
+    margin: 0;
+    font-family: 'Pretendard',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    sans-serif;
     line-height: 1.5;
     color: #111;
     background-color: #fff;
 }
 
-/* elements */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+figure,
+dl,
+dd {
+    margin: 0;
+}
+
+b,
+strong {
+    font-weight: 700;
+}
+
+small {
+    font-size: 0.875em;
+}
+
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 a {
+    background-color: transparent;
     color: inherit;
     text-decoration: none;
 }
 
-button {
+button,
+input,
+optgroup,
+select,
+textarea {
     font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+    appearance: none;
+    -webkit-appearance: none;
     border: 0;
     background: none;
     cursor: pointer;
 }
 
-/* media */
-img,
-video {
-    max-width: 100%;
-    height: auto;
-    display: block;
+textarea {
+    resize: vertical;
 }
 
-/* accessibility */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline dotted;
+}
+
 :focus-visible {
     outline: 2px solid #005fcc;
     outline-offset: 2px;
+}
+
+[hidden] {
+    display: none !important;
 }
