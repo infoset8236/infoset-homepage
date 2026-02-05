@@ -67,7 +67,7 @@ export default function Hero() {
             <div className={styles.content}>
                 <img className={styles.logo} src={logo} alt="Logo" />
 
-                <div className={`${styles.title} ${showTitle ? styles.show : ''}`}>
+                <div className={`${styles.title} ${showTitle && styles.show}`}>
                     <span className={styles.count}>{count}</span>개 도서관의 선택
                 </div>
             </div>
