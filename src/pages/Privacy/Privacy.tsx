@@ -4,7 +4,7 @@ const Privacy = () => {
   return (
     <div className={styles.privacy}>
       <p className={styles.logo}>
-        <img src="/src/assets/images/logo_black.svg" alt="" />
+        <img src="@/assets/images/logo_black.svg" alt="" />
       </p>
       <h1 className={styles.title}>개인정보 약관 </h1>
       <ul className={styles.list}>

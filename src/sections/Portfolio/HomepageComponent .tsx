@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { homepageData } from './portfolioData';
 import styles from './HomepageComponent .module.css';
+import desktop from '/portfolio/Display.png';
 
 const INTERVAL_MS = 8000;
 const LAST = homepageData.length - 1;
@@ -40,7 +41,7 @@ const HomepageComponent = () => {
           }}
         >
           <div className={styles.imageWrap}>
-            <img className={styles.frame} src="/src/assets/images/portfolio/display.png" alt="" />
+            <img className={styles.frame} src={desktop} alt="" />
             <img src={data.img} alt="" />
           </div>
 
@@ -70,7 +71,7 @@ const HomepageComponent = () => {
                             ? styles.fadeIn
                             : styles.fadeOut
                         }`}
-                        src={`/src/assets/images/portfolio/${img}.svg`}
+                        src={`/portfolio/${img}.svg`}
                         alt=""
                       />
                     ))}

@@ -1,7 +1,7 @@
-import video1 from '/src/assets/videos/main.mp4';
-import img1 from '/src/assets/images/hero/main01.png';
-import img2 from '/src/assets/images/hero/main02.png';
-import img3 from '/src/assets/images/hero/main03.png';
+import video1 from '@/assets/videos/main.mp4';
+import img1 from '@/assets/images/hero/main01.png';
+import img2 from '@/assets/images/hero/main02.png';
+import img3 from '@/assets/images/hero/main03.png';
 
 export type HeroSlide = {
   type: 'video' | 'image';

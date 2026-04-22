@@ -5,7 +5,7 @@ const ScrollUI = () => {
     <>
       <div className={styles.scrollDown}>SCROLL DOWN</div>
       <div className={styles.infoIco}>
-        <img src="/src/assets/images/hero/infoIco.svg" alt="" />
+        <img src="@/assets/images/hero/infoIco.svg" alt="" />
       </div>
     </>
   );

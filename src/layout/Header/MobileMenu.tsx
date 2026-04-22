@@ -19,7 +19,7 @@ const MobileMenu = ({ onClose, isOpen, onOpenInquiry }: Props) => {
         <div className={styles.mbHeader}>
           <img className={styles.logo} src={logoMap.active} alt="Logo" />
           <button className={styles.closeBtn} onClick={onClose}>
-            <img src="/src/assets/images/close.svg" alt="Close" />
+            <img src="@/assets/images/close.svg" alt="Close" />
           </button>
         </div>
 

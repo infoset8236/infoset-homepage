@@ -11,6 +11,7 @@ import Partners from '../../sections/Partners/Partners.tsx';
 import Footer from '../../layout/Footer/Footer.tsx';
 import Inquiry from '../../sections/Hero/Inquiry.tsx';
 import styles from './Home.module.css';
+import infoIco from '@/assets/images/hero/infoIco.svg';
 import { useState } from 'react';
 
 const sections = SectionsSchema.parse([
@@ -36,7 +37,7 @@ export default function Home() {
           setIsOpen(true);
         }}
       >
-        <img src="/src/assets/images/hero/infoIco.svg" alt="info icon" />
+        <img src={infoIco} alt="info icon" />
       </div>
 
       <ReactFullpage

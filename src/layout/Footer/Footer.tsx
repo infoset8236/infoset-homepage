@@ -1,12 +1,13 @@
 import { Link } from 'react-router-dom';
 import styles from '../Footer/Footer.module.css';
+import logo from '@/assets/images/logo.svg';
 
 const Footer = () => {
   return (
     <div className={`section ${styles.footer}`}>
       <div className={styles.footerInner}>
         <div className={styles.footerLogo}>
-          <img src="/src/assets/images/logo.svg" alt="" />
+          <img src={logo} alt="" />
         </div>
         <div className={styles.footerInfo}>
           <dl className={styles.infoItem}>

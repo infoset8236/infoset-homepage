@@ -1,5 +1,5 @@
-import logo from '/src/assets/images/logo.svg';
-import logoActive from '/src/assets/images/logo_black.svg';
+import logo from '@/assets/images/logo.svg';
+import logoActive from '@/assets/images/logo_black.svg';
 
 export const logoMap = {
   default: logo,

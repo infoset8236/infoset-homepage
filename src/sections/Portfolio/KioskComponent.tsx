@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { portfolioData } from './portfolioData';
 import styles from '../Portfolio/KioskComponent.module.css';
+import kiosk from '/portfolio/kiosk.png';
 
 const INTERVAL_MS = 8000;
 const LAST = portfolioData.length - 1;
@@ -40,7 +41,7 @@ const KioskComponent = () => {
           }}
         >
           <div className={styles.imageWrap}>
-            <img className={styles.frame} src="/src/assets/images/portfolio/kiosk.png" alt="" />
+            <img className={styles.frame} src={kiosk} alt="" />
             <img src={data.img} alt="" />
           </div>
 
@@ -70,7 +71,7 @@ const KioskComponent = () => {
                             ? styles.fadeIn
                             : styles.fadeOut
                         }`}
-                        src={`/src/assets/images/portfolio/${img}.svg`}
+                        src={`/portfolio/${img}.svg`}
                         alt=""
                       />
                     ))}

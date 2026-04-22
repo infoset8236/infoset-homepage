@@ -214,7 +214,7 @@ form {
   appearance: none;
   cursor: pointer;
   outline: none;
-  background: #eff6ff url('/src/assets/images/hero/check.svg') no-repeat center / 1rem;
+  background: #eff6ff url('@/assets/images/hero/check.svg') no-repeat center / 1rem;
   border: 0;
   border-radius: 0.5rem;
   transition: all 0.2s ease;
@@ -225,7 +225,7 @@ form {
 }
 
 .formGroup .consentArea label input:checked {
-  background: #2b7fff url('/src/assets/images/hero/checked.svg') no-repeat center / 1rem;
+  background: #2b7fff url('@/assets/images/hero/checked.svg') no-repeat center / 1rem;
 }
 
 .formGroup .consentArea button {

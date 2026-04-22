@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import styles from './Inquiry.module.css';
-import closeIcon from '/src/assets/images/hero/close.svg';
+import closeIcon from '@/assets/images/hero/close.svg';
 import emailjs from 'emailjs-com';
 
 interface ModalProps {

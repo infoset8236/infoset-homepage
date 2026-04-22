@@ -147,7 +147,7 @@ div.media {
   width: 1rem;
   height: 1rem;
   content: '';
-  background: url('/src/assets/images/hero/downIco.svg');
+  background: url('@/assets/images/hero/downIco.svg');
 }
 
 @media (width <= 1199px) {

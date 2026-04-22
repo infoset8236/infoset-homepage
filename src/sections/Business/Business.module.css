@@ -115,16 +115,16 @@
 }
 
 .wrap:nth-child(1) .imgContainer {
-  background: url('/src/assets/images/business/ict.png') center / cover no-repeat;
+  background: url('@/assets/images/business/ict.png') center / cover no-repeat;
 }
 
 .wrap:nth-child(2) .imgContainer {
-  background: url('/src/assets/images/business/system.png') bottom right -10px no-repeat;
+  background: url('@/assets/images/business/system.png') bottom right -10px no-repeat;
   background-size: 480px;
 }
 
 .wrap:nth-child(3) .imgContainer {
-  background: url('/src/assets/images/business/ai.png') center / cover no-repeat;
+  background: url('@/assets/images/business/ai.png') center / cover no-repeat;
 }
 
 .wrap:nth-child(2) .img {
@@ -196,7 +196,7 @@
   }
 
   .wrap:nth-child(2) .imgContainer {
-    background: url('/src/assets/images/business/system.png') bottom right / cover no-repeat;
+    background: url('@/assets/images/business/system.png') bottom right / cover no-repeat;
   }
 
   .wrap::after {
@@ -209,7 +209,7 @@
     font: 600 0.9375rem / 1.4 Pretendard;
     color: #fff;
     content: '자세히';
-    background: rgb(0 0 0 / 50%) url('/src/assets/images/business/arrow.svg') no-repeat right 0.5rem
+    background: rgb(0 0 0 / 50%) url('@/assets/images/business/arrow.svg') no-repeat right 0.5rem
       center;
     border-radius: 1.5rem;
     backdrop-filter: blur(2px);
@@ -252,7 +252,7 @@
   }
 
   .wrap:nth-child(2) .imgContainer {
-    background: url('/src/assets/images/business/system.png') bottom right / cover no-repeat;
+    background: url('@/assets/images/business/system.png') bottom right / cover no-repeat;
   }
 
   .wrap::after {
@@ -265,7 +265,7 @@
     font: 600 0.9375rem / 1.4 Pretendard;
     color: #fff;
     content: '자세히';
-    background: rgb(0 0 0 / 50%) url('/src/assets/images/business/arrow.svg') no-repeat right 0.5rem
+    background: rgb(0 0 0 / 50%) url('@/assets/images/business/arrow.svg') no-repeat right 0.5rem
       center;
     border-radius: 1.5rem;
     backdrop-filter: blur(2px);
@@ -347,7 +347,7 @@
   .wrap.open::after {
     padding: 0.25rem 2rem 0.25rem 1rem;
     content: '닫기';
-    background: rgb(0 0 0 / 50%) url('/src/assets/images/business/close.svg') no-repeat right 0.75rem
+    background: rgb(0 0 0 / 50%) url('@/assets/images/business/close.svg') no-repeat right 0.75rem
       center;
     opacity: 1;
   }
