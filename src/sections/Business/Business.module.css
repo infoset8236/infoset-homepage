@@ -1,0 +1,371 @@
+.section {
+  padding-top: 4.5rem;
+}
+
+.mainTit {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 3.5rem;
+}
+
+.sub {
+  font: 700 1.25rem/1.4 Pretendard;
+  color: #2b7fff;
+  text-align: center;
+  letter-spacing: -0.025rem;
+}
+
+.tit {
+  font: 600 2.75rem/1.2 Pretendard;
+  color: #1e2939;
+  text-align: center;
+  letter-spacing: -0.055rem;
+}
+
+.tit span {
+  color: #2b7fff;
+}
+
+.area {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.wrap {
+  position: relative;
+  overflow: hidden;
+  border-radius: 2rem;
+}
+
+.content {
+  position: absolute;
+  top: 2.5rem;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+}
+
+.label {
+  font: 600 1rem/1.2 Pretendard;
+  color: #fff;
+  text-align: center;
+  letter-spacing: -0.02rem;
+}
+
+.title {
+  margin-top: 0.3rem;
+  font: 700 2rem/1.2 Pretendard;
+  color: #fff;
+  text-align: center;
+  letter-spacing: -0.04rem;
+}
+
+.desc {
+  margin-top: 2.06rem;
+  font: 500 1.25rem/1.4 Pretendard;
+  color: #fff;
+  text-align: center;
+  letter-spacing: -0.025rem;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.wrap:nth-child(2) .desc {
+  margin-top: 6rem;
+}
+
+.imgContainer {
+  position: relative;
+  overflow: hidden;
+  background: #1e2939;
+  box-shadow: 4px 8px 24px rgb(30 41 57 / 24%);
+}
+
+.imgContainer::before {
+  position: absolute;
+  inset: 0;
+  content: '';
+  background: linear-gradient(to bottom, rgb(0 0 0 / 60%), transparent 50%);
+}
+
+.imgContainer::after {
+  position: absolute;
+  inset: 0;
+  content: '';
+  background: #1e2939;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.wrap:nth-child(1) .imgContainer,
+.wrap:nth-child(3) .imgContainer {
+  width: 24rem;
+  height: 25.5rem;
+}
+
+.wrap:nth-child(2) .imgContainer {
+  width: 24rem;
+  height: 35rem;
+}
+
+.wrap:nth-child(1) .imgContainer {
+  background: url('/src/assets/images/business/ict.png') center / cover no-repeat;
+}
+
+.wrap:nth-child(2) .imgContainer {
+  background: url('/src/assets/images/business/system.png') bottom right -10px no-repeat;
+  background-size: 480px;
+}
+
+.wrap:nth-child(3) .imgContainer {
+  background: url('/src/assets/images/business/ai.png') center / cover no-repeat;
+}
+
+.wrap:nth-child(2) .img {
+  transform: scale(1.2);
+  transform-origin: 80% 100%;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .wrap:hover .imgContainer::after {
+    opacity: 0.7;
+  }
+
+  .wrap:hover .imgContainer {
+    filter: blur(2px);
+  }
+
+  .wrap:hover .desc {
+    opacity: 1;
+  }
+}
+
+@media (width <= 1199px) {
+  .sub {
+    font-size: 1rem;
+  }
+
+  .tit {
+    font-size: 2.5rem;
+  }
+
+  .wrap {
+    border-radius: 1rem;
+  }
+
+  .wrap:nth-child(1) .imgContainer,
+  .wrap:nth-child(3) .imgContainer {
+    width: 17.5rem;
+    height: 18.625rem;
+  }
+
+  .wrap:nth-child(2) .imgContainer {
+    width: 17.5rem;
+    height: 25.625rem;
+  }
+
+  .wrap:nth-child(2) .img {
+    transform: scale(1);
+  }
+
+  .label {
+    font-size: 0.875rem;
+  }
+
+  .title {
+    font-size: 1.25rem;
+  }
+
+  .desc {
+    font-size: 1rem;
+  }
+
+  .wrap:nth-child(1) .desc,
+  .wrap:nth-child(2) .desc {
+    margin-top: 4rem;
+  }
+
+  .wrap:nth-child(3) .desc {
+    margin-top: 2.62rem;
+  }
+
+  .wrap:nth-child(2) .imgContainer {
+    background: url('/src/assets/images/business/system.png') bottom right / cover no-repeat;
+  }
+
+  .wrap::after {
+    position: absolute;
+    bottom: 1.25rem;
+    left: 1.25rem;
+    display: flex;
+    align-items: center;
+    padding: 0.25rem 1.5rem 0.25rem 1rem;
+    font: 600 0.9375rem / 1.4 Pretendard;
+    color: #fff;
+    content: '자세히';
+    background: rgb(0 0 0 / 50%) url('/src/assets/images/business/arrow.svg') no-repeat right 0.5rem
+      center;
+    border-radius: 1.5rem;
+    backdrop-filter: blur(2px);
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .wrap:hover::after {
+      opacity: 0;
+    }
+  }
+}
+
+@media (width <= 768px) {
+  .content {
+    top: 1.25rem;
+  }
+
+  .wrap:nth-child(1) .imgContainer,
+  .wrap:nth-child(3) .imgContainer {
+    width: 13rem;
+    height: 16.5rem;
+  }
+
+  .wrap:nth-child(2) .imgContainer {
+    width: 13rem;
+    height: 20rem;
+  }
+
+  .desc {
+    font-size: 0.75rem;
+  }
+
+  .wrap:nth-child(1) .desc,
+  .wrap:nth-child(2) .desc {
+    margin-top: 4rem;
+  }
+
+  .wrap:nth-child(3) .desc {
+    margin-top: 2.62rem;
+  }
+
+  .wrap:nth-child(2) .imgContainer {
+    background: url('/src/assets/images/business/system.png') bottom right / cover no-repeat;
+  }
+
+  .wrap::after {
+    position: absolute;
+    bottom: 1.25rem;
+    left: 1.25rem;
+    display: flex;
+    align-items: center;
+    padding: 0.25rem 1.5rem 0.25rem 1rem;
+    font: 600 0.9375rem / 1.4 Pretendard;
+    color: #fff;
+    content: '자세히';
+    background: rgb(0 0 0 / 50%) url('/src/assets/images/business/arrow.svg') no-repeat right 0.5rem
+      center;
+    border-radius: 1.5rem;
+    backdrop-filter: blur(2px);
+    transition: 0.3s;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .wrap:hover::after {
+      opacity: 0;
+    }
+  }
+}
+
+@media (width <= 640px) {
+  .section {
+    padding: 4rem 1.25rem;
+  }
+
+  .mainTit {
+    padding: 0 1.25rem;
+    margin-bottom: 2.5rem;
+    word-break: keep-all;
+  }
+
+  .tit {
+    font-size: 1.75rem;
+    line-height: 120%; /* 2.1rem */
+    letter-spacing: -0.035rem;
+  }
+
+  .area {
+    flex-direction: column;
+  }
+
+  .wrap {
+    width: 100%;
+  }
+
+  .imgContainer {
+    width: 100% !important;
+    height: 12.5rem !important;
+  }
+
+  .content {
+    left: 1.25rem;
+    transform: translateX(0);
+  }
+
+  .label {
+    text-align: left;
+  }
+
+  .title {
+    text-align: left;
+  }
+
+  .wrap:nth-child(2) .title {
+    display: flex;
+    gap: 0.25rem;
+  }
+
+  .wrap:nth-child(2) .imgContainer {
+    background-position: center;
+  }
+
+  .wrap .desc {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 0 !important;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    text-align: left;
+    letter-spacing: -0.02rem;
+  }
+
+  .wrap.open::after {
+    padding: 0.25rem 2rem 0.25rem 1rem;
+    content: '닫기';
+    background: rgb(0 0 0 / 50%) url('/src/assets/images/business/close.svg') no-repeat right 0.75rem
+      center;
+    opacity: 1;
+  }
+
+  .wrap.open .imgContainer::after {
+    opacity: 0.7;
+  }
+
+  .wrap.open .imgContainer {
+    filter: blur(2px);
+  }
+
+  .wrap.open .label,
+  .wrap.open .title {
+    opacity: 0;
+  }
+
+  .wrap.open .desc {
+    opacity: 1;
+  }
+}

@@ -71,3 +71,65 @@ export default defineConfig([
   },
 ])
 ```
+
+```
+infoset-homepage
+├─ .eslintrc.cjs
+├─ .prettierrc
+├─ eslint.config.js
+├─ index.html
+├─ package-lock.json
+├─ package.json
+├─ public
+│  └─ vite.svg
+├─ README.md
+├─ src
+│  ├─ App.tsx
+│  ├─ assets
+│  │  ├─ fonts
+│  │  │  ├─ Pretendard-Bold.woff
+│  │  │  ├─ Pretendard-ExtraBold.woff
+│  │  │  ├─ Pretendard-Medium.woff
+│  │  │  ├─ Pretendard-Regular.woff
+│  │  │  └─ Pretendard-SemiBold.woff
+│  │  ├─ images
+│  │  │  └─ logo.png
+│  │  └─ videos
+│  │     └─ main.mp4
+│  ├─ components
+│  │  ├─ Business
+│  │  │  ├─ Business.module.css
+│  │  │  └─ Business.tsx
+│  │  ├─ Footer
+│  │  │  ├─ Footer.module.css
+│  │  │  └─ Footer.tsx
+│  │  ├─ Header
+│  │  │  ├─ Header.module.css
+│  │  │  └─ Header.tsx
+│  │  ├─ Hero
+│  │  │  ├─ Hero.module.css
+│  │  │  └─ Hero.tsx
+│  │  ├─ Partners
+│  │  │  ├─ Partners.module.css
+│  │  │  └─ Partners.tsx
+│  │  └─ Portfolio
+│  │     ├─ Portfolio.module.css
+│  │     └─ Portfolio.tsx
+│  ├─ main.tsx
+│  ├─ pages
+│  │  └─ Main
+│  │     ├─ Home.module.css
+│  │     ├─ Home.schema.ts
+│  │     └─ Home.tsx
+│  ├─ stores
+│  │  └─ useSectionStore.ts
+│  └─ styles
+│     ├─ font.css
+│     ├─ fullpage.css
+│     └─ global.css
+├─ tsconfig.app.json
+├─ tsconfig.json
+├─ tsconfig.node.json
+└─ vite.config.ts
+
+```

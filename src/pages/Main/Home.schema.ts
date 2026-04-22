@@ -1,9 +1,6 @@
 import { z } from 'zod';
 
-export const SectionIdSchema = z.enum([
-    'hero',
-    'service',
-]);
+export const SectionIdSchema = z.enum(['hero', 'business', 'portfolio', 'partners', 'footer']);
 
 export type SectionId = z.infer<typeof SectionIdSchema>;
 

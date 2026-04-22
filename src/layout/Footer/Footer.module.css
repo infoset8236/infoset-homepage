@@ -1,0 +1,91 @@
+.footer {
+  width: 100%;
+  height: 20rem !important;
+  padding: 2.5rem;
+  background: #1e2939;
+}
+
+.footer .footerInner {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.footerInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.infoItem {
+  display: flex;
+  gap: 0.5rem;
+  align-self: stretch;
+}
+
+.infoItem .infoTitle {
+  font-family: Pretendard;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 1.1375rem */
+  color: #e5e7eb;
+  letter-spacing: -0.0175rem;
+  white-space: nowrap;
+}
+
+.infoItem .infoDesc {
+  font-family: Pretendard;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 1.1375rem */
+  color: #e5e7eb;
+  letter-spacing: -0.0175rem;
+}
+
+.footerBottom {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  justify-content: space-between;
+}
+
+.footerBottom .copy {
+  font-family: Pretendard;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 1.1375rem */
+  color: #e5e7eb;
+  letter-spacing: -0.0175rem;
+}
+
+.footerBottom .policy {
+  font-family: Pretendard;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 0.975rem */
+  color: #e5e7eb;
+  text-align: right;
+  letter-spacing: -0.015rem;
+  text-decoration-line: underline;
+  text-decoration-thickness: auto;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-underline-position: from-font;
+  text-underline-offset: auto;
+}
+
+@media (width <= 768px) {
+  .footer {
+    min-height: auto !important;
+  }
+}

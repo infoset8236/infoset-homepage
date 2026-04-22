@@ -1,0 +1,39 @@
+.partnersSection {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.partnersInner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.partnersInner > :first-child {
+  flex-shrink: 0;
+}
+
+.partnersInner > :last-child {
+  margin-top: auto;
+}
+
+.infoIco {
+  position: fixed;
+  right: 2.5rem;
+  bottom: 3.37rem;
+  z-index: 999;
+  width: 4.75rem;
+  height: 4.75rem;
+  aspect-ratio: 1 / 1;
+}
+
+@media (width <= 640px) {
+  .infoIco {
+    right: 1.25rem;
+    bottom: 1.25rem;
+    width: 2.85rem;
+    height: 2.85rem;
+    aspect-ratio: 1/1;
+  }
+}

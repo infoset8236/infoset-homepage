@@ -1,0 +1,210 @@
+# Query: /src/assets
+# ContextLines: 1
+
+51개 결과 - 15 파일
+
+src\components\ScrollUI\ScrollUI.tsx:
+  7        <div className={styles.infoIco}>
+  8:         <img src="/src/assets/images/hero/infoIco.svg" alt="" />
+  9        </div>
+
+src\data\tagData.ts:
+  6    id: i + 1,
+  7:   img: `/src/assets/images/partners/logo/${i + 1}.png`,
+  8  }));
+
+src\layout\Footer\Footer.tsx:
+  8          <div className={styles.footerLogo}>
+  9:           <img src="/src/assets/images/logo.svg" alt="" />
+  10          </div>
+
+src\layout\Header\Header.tsx:
+  34          <img
+  35:           src={active ? '/src/assets/images/menuActive.svg' : '/src/assets/images/menu.svg'}
+  36            alt="menu"
+
+src\layout\Header\MobileMenu.tsx:
+  21            <button className={styles.closeBtn} onClick={onClose}>
+  22:             <img src="/src/assets/images/close.svg" alt="Close" />
+  23            </button>
+
+src\pages\Main\Home.tsx:
+  38        >
+  39:         <img src="/src/assets/images/hero/infoIco.svg" alt="info icon" />
+  40        </div>
+
+src\pages\Privacy\Privacy.tsx:
+  6        <p className={styles.logo}>
+  7:         <img src="/src/assets/images/logo_black.svg" alt="" />
+  8        </p>
+
+src\sections\Business\Business.module.css:
+  117  .wrap:nth-child(1) .imgContainer {
+  118:   background: url('/src/assets/images/business/ict.png') center / cover no-repeat;
+  119  }
+
+  121  .wrap:nth-child(2) .imgContainer {
+  122:   background: url('/src/assets/images/business/system.png') bottom right -10px no-repeat;
+  123    background-size: 480px;
+
+  126  .wrap:nth-child(3) .imgContainer {
+  127:   background: url('/src/assets/images/business/ai.png') center / cover no-repeat;
+  128  }
+
+  198    .wrap:nth-child(2) .imgContainer {
+  199:     background: url('/src/assets/images/business/system.png') bottom right / cover no-repeat;
+  200    }
+
+  211      content: '자세히';
+  212:     background: rgb(0 0 0 / 50%) url('/src/assets/images/business/arrow.svg') no-repeat right 0.5rem
+  213        center;
+
+  254    .wrap:nth-child(2) .imgContainer {
+  255:     background: url('/src/assets/images/business/system.png') bottom right / cover no-repeat;
+  256    }
+
+  267      content: '자세히';
+  268:     background: rgb(0 0 0 / 50%) url('/src/assets/images/business/arrow.svg') no-repeat right 0.5rem
+  269        center;
+
+  349      content: '닫기';
+  350:     background: rgb(0 0 0 / 50%) url('/src/assets/images/business/close.svg') no-repeat right 0.75rem
+  351        center;
+
+src\sections\Business\businessData.ts:
+  10    {
+  11:     img: '/src/assets/images/business/ict.png',
+  12:     hoverImg: '/src/assets/images/business/ict_hover.png',
+  13      sub: 'ICT Infrastructure',
+
+  17    {
+  18:     img: '/src/assets/images/business/system.png',
+  19:     hoverImg: '/src/assets/images/business/system_hover.png',
+  20      sub: 'System Integration',
+
+  24    {
+  25:     img: '/src/assets/images/business/ai.png',
+  26:     hoverImg: '/src/assets/images/business/ai_hover.png',
+  27      sub: 'AI & Big Data',
+
+src\sections\Hero\Hero.module.css:
+  149    content: '';
+  150:   background: url('/src/assets/images/hero/downIco.svg');
+  151  }
+
+src\sections\Hero\Inquiry.module.css:
+  216    outline: none;
+  217:   background: #eff6ff url('/src/assets/images/hero/check.svg') no-repeat center / 1rem;
+  218    border: 0;
+
+  227  .formGroup .consentArea label input:checked {
+  228:   background: #2b7fff url('/src/assets/images/hero/checked.svg') no-repeat center / 1rem;
+  229  }
+
+src\sections\Hero\Inquiry.tsx:
+  2  import styles from './Inquiry.module.css';
+  3: import closeIcon from '/src/assets/images/hero/close.svg';
+  4  import emailjs from 'emailjs-com';
+
+src\sections\Portfolio\HomepageComponent .tsx:
+  42            <div className={styles.imageWrap}>
+  43:             <img className={styles.frame} src="/src/assets/images/portfolio/display.png" alt="" />
+  44              <img src={data.img} alt="" />
+
+  72                          }`}
+  73:                         src={`/src/assets/images/portfolio/${img}.svg`}
+  74                          alt=""
+
+src\sections\Portfolio\KioskComponent.tsx:
+  42            <div className={styles.imageWrap}>
+  43:             <img className={styles.frame} src="/src/assets/images/portfolio/kiosk.png" alt="" />
+  44              <img src={data.img} alt="" />
+
+  72                          }`}
+  73:                         src={`/src/assets/images/portfolio/${img}.svg`}
+  74                          alt=""
+
+src\sections\Portfolio\portfolioData.ts:
+   14    {
+   15:     img: '/src/assets/images/portfolio/kiosk/yeongyang_library_kiosk.png',
+   16      title: '경상북도교육청 영양도서관 ICT 시스템 구축',
+
+   19    {
+   20:     img: '/src/assets/images/portfolio/kiosk/yecheon_library_kiosk.png',
+   21      title: '경상북도교육청 예천도서관 ICT 및 RFID 시스템 구축',
+
+   24    {
+   25:     img: '/src/assets/images/portfolio/kiosk/daegu_library_kiosk.png',
+   26      title: '대구도서관 ICT 스마트 도서관 구축',
+
+   29    {
+   30:     img: '/src/assets/images/portfolio/kiosk/poeun_heunghae_kiosk.png',
+   31      title: '포은흥해도서관 ICT 스마트 서비스 시스템 구축',
+
+   34    {
+   35:     img: '/src/assets/images/portfolio/kiosk/yeonje_comic_library_kiosk.png',
+   36      title: '연제만화도서관 미래형 스마트 도서관시스템 구축',
+
+   39    {
+   40:     img: '/src/assets/images/portfolio/kiosk/gumi_sandong_kiosk.png',
+   41      title: '구미시립산동도서관 ICT 시스템 구축',
+
+   44    {
+   45:     img: '/src/assets/images/portfolio/kiosk/haman_library_kiosk.png',
+   46      title: '경상남도교육청 함안도서관 ICT 시스템 구축',
+
+   49    {
+   50:     img: '/src/assets/images/portfolio/kiosk/gukchae_library_kiosk.png',
+   51      title: '국채보상운동기념도서관 ICT 스마트 도서관시스템 구축',
+
+   57    {
+   58:     img: '/src/assets/images/portfolio/desktop/daegu_library_homepage_pc.png',
+   59      title: '대구도서관 홈페이지 구축',
+
+   62    {
+   63:     img: '/src/assets/images/portfolio/desktop/daegu_city_library_pc.png',
+   64      title: '대구시립도서관 홈페이지 디자인 개편 (8개관)',
+
+   67    {
+   68:     img: '/src/assets/images/portfolio/desktop/gunwi_library_pc.png',
+   69      title: '삼국유사군위도서관 데이터이관 및 홈페이지 개편',
+
+   72    {
+   73:     img: '/src/assets/images/portfolio/desktop/yeongju_library_pc.png',
+   74      title: '영주시립도서관 홈페이지 전면 개편',
+
+   77    {
+   78:     img: '/src/assets/images/portfolio/desktop/gimcheon_library_pc.png',
+   79      title: '김천시립도서관 홈페이지 개편 사업',
+
+   82    // {
+   83:   //   img: '/src/assets/images/portfolio/desktop/gyeonggi_edu_library_pc.png',
+   84    //   title: '경기도교육도서관 통합정보시스템 구축',
+
+   87    {
+   88:     img: '/src/assets/images/portfolio/desktop/daegu_hub_system_pc.png',
+   89      title: '대구광역시 도서관 통합 허브시스템 구축 (1~3단계)',
+
+   92    {
+   93:     img: '/src/assets/images/portfolio/desktop/busan_web_platform_1_pc.png',
+   94      title: '부산도서관 통합 웹서비스 플랫폼 구축',
+
+   97    {
+   98:     img: '/src/assets/images/portfolio/desktop/jeonbuk_edu_library_pc.png',
+   99      title: '전라북도교육청 공공도서관 통합시스템 구축',
+
+  102    {
+  103:     img: '/src/assets/images/portfolio/desktop/dongjak_library_pc.png',
+  104      title: '동작구 도서관 도서관리시스템 등 재구축 사업',
+
+  107    {
+  108:     img: '/src/assets/images/portfolio/desktop/incheon_edu_library_pc.png',
+  109      title: '인천광역시교육청 공공도서관 전산시스템 통합 구축 사업',
+
+  112    {
+  113:     img: '/src/assets/images/portfolio/desktop/seoul_edu_library_pc.png',
+  114      title: '서울시교육청 도서관ㆍ평생학습관 홈페이지 통합 구축',
+
+  117    {
+  118:     img: '/src/assets/images/portfolio/desktop/gyeongbuk_edu_library_pc.png',
+  119      title: '경상북도교육청 도서관 통합정보시스템 구축',
