@@ -22,7 +22,6 @@
 .tag img {
   width: 100%;
   height: 100%;
-  aspect-ratio: 104/15;
   object-fit: contain;
 }
 
