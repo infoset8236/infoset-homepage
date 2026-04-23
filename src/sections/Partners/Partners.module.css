@@ -81,11 +81,17 @@
 }
 
 .left {
-  animation: scrollLeft 100s linear infinite;
+  animation: scrollLeft 200s linear infinite;
 }
 
 .right {
-  animation: scrollRight 120s linear infinite;
+  animation: scrollRight 220s linear infinite;
+}
+.left:hover {
+  animation-play-state: paused;
+}
+.right:hover {
+  animation-play-state: paused;
 }
 
 @keyframes scrollLeft {

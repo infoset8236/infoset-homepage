@@ -44,7 +44,7 @@
 .content .title {
   display: flex;
   flex-direction: column;
-  height: 13rem;
+  height: 9.75rem;
   font-family: Pretendard;
   font-size: 2.5rem;
   font-style: normal;
@@ -100,6 +100,7 @@
   width: 2.5rem;
   height: 2.5rem;
   aspect-ratio: 1/1;
+  cursor: pointer;
 }
 
 .arrow .next {
@@ -110,35 +111,7 @@
   height: 2.5rem;
   aspect-ratio: 1/1;
   transform: rotate(180deg);
-}
-
-.pagination {
-  display: flex;
-  gap: 0.25rem;
-  align-items: center;
-  padding: 0.5rem 1rem;
-  background: #4a5565;
-  border-radius: 624.9375rem;
-}
-
-.pagination .current {
-  font-family: Pretendard;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 140%; /* 1.4rem */
-  color: #fff;
-  letter-spacing: -0.02rem;
-}
-
-.pagination .count {
-  font-family: Pretendard;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 140%; /* 1.4rem */
-  color: #d1d5dc;
-  letter-spacing: -0.02rem;
+  cursor: pointer;
 }
 
 .viewport {

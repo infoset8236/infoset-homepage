@@ -65,7 +65,8 @@
   letter-spacing: -0.025rem;
   cursor: pointer;
   transition: 0.3s;
-  width: 8.25rem;
+  width: 10rem;
+  white-space: nowrap;
 }
 
 .slider {
@@ -73,7 +74,7 @@
   top: 0.38rem;
   left: 0.38rem;
   z-index: 0;
-  width: 50%;
+  width: 10rem;
   height: 2.62rem;
   padding: 0.5rem 2rem;
   background: #fff;

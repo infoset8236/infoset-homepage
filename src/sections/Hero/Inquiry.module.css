@@ -202,6 +202,7 @@ form {
   line-height: 140%; /* 1.4rem */
   color: #1e2939;
   letter-spacing: -0.02rem;
+  cursor: pointer;
 }
 
 .formGroup .consentArea label input {

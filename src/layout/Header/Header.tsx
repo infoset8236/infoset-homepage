@@ -13,7 +13,9 @@ const Header = () => {
   return (
     <div className={`${styles.header} ${active ? styles.active : ''}`}>
       <div className={styles.inner}>
-        <img className={styles.logo} src={active ? logoMap.active : logoMap.default} alt="Logo" />
+        <a href="#hero">
+          <img className={styles.logo} src={active ? logoMap.active : logoMap.default} alt="Logo" />
+        </a>
         <nav className={styles.nav}>
           <a href="#hero">홈</a>
           <a href="#business">사업분야</a>

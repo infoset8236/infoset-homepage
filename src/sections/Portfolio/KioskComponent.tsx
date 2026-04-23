@@ -78,11 +78,6 @@ const KioskComponent = () => {
                   </div>
                 ))}
               </div>
-
-              <div className={styles.pagination}>
-                <span className={styles.current}>{index + 1}</span>
-                <span className={styles.count}>/ {portfolioData.length}</span>
-              </div>
             </div>
           </div>
         </div>

@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import styles from '../Portfolio/Portfolio.module.css';
 import KioskComponent from './KioskComponent';
 import HomepageComponent from './HomepageComponent ';
+import ServiceComponent from './ServiceComponent';
 
 interface TabItem {
   id: string;
@@ -19,6 +20,11 @@ const tabData: TabItem[] = [
     id: 'homepage',
     label: '홈페이지',
     content: <HomepageComponent />,
+  },
+  {
+    id: 'service',
+    label: '통합 유지보수',
+    content: <ServiceComponent />,
   },
 ];
 
@@ -50,7 +56,7 @@ export default function Portfolio() {
           <div
             className={styles.slider}
             style={{
-              transform: `translateX(${activeIndex * (isMobile ? 93 : 91)}%)`,
+              transform: `translateX(${activeIndex * (isMobile ? 93 : 100)}%)`,
             }}
           />
 

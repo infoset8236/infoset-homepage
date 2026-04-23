@@ -26,6 +26,7 @@
   width: 4.75rem;
   height: 4.75rem;
   aspect-ratio: 1 / 1;
+  cursor: pointer;
 }
 
 @media (width <= 640px) {

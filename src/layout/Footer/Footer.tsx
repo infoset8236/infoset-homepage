@@ -26,7 +26,7 @@ const Footer = () => {
           </dl>
           <dl className={styles.infoItem}>
             <dt className={styles.infoTitle}>메일</dt>
-            <dd className={styles.infoDesc}>infoset8235@gmail.com, infoset8236@gmail.com</dd>
+            <dd className={styles.infoDesc}>contract@infoset.co.kr</dd>
           </dl>
         </div>
         <div className={styles.footerBottom}>
