@@ -116,7 +116,7 @@ export const homepageData: HomepageItem[] = [
   },
   {
     img: '/portfolio/desktop/gyeongbuk_edu_library_pc.png',
-    title: '경상북도교육청 도서관 통합정보시스템 구축',
+    title: '경상북도교육청 도서관 통합정보시스템',
     period: '2016.04 ~ 2016.10',
   },
 ];

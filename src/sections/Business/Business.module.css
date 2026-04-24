@@ -42,6 +42,7 @@
   overflow: hidden;
   border-radius: 2rem;
   cursor: pointer;
+  box-shadow: 4px 8px 24px rgb(30 41 57 / 24%);
 }
 
 .content {
@@ -85,7 +86,6 @@
   position: relative;
   overflow: hidden;
   background: #1e2939;
-  box-shadow: 4px 8px 24px rgb(30 41 57 / 24%);
 }
 
 .imgContainer::before {

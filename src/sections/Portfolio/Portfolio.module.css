@@ -1,5 +1,6 @@
 .section {
   background: linear-gradient(180deg, #1e2939 0%, #111e30 100%);
+  padding-top: 4.5rem;
 }
 
 .subTit {
@@ -10,6 +11,7 @@
   color: #2b7fff;
   text-align: center;
   letter-spacing: -0.025rem;
+  margin-bottom: 0.5rem;
 }
 
 .Tit {
