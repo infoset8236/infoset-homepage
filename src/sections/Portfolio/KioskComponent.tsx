@@ -79,6 +79,7 @@ const KioskComponent = () => {
                 ))}
               </div>
             </div>
+            <p className={styles.caption}>*최근 3년 기준 실적입니다.</p>
           </div>
         </div>
       ))}

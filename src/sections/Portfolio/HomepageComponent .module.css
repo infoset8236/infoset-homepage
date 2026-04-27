@@ -114,6 +114,16 @@
   cursor: pointer;
 }
 
+.caption {
+  color: #e5e7eb;
+  font-family: Pretendard;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 1.4rem */
+  letter-spacing: -0.02rem;
+}
+
 .viewport {
   position: relative;
   width: 100%;
