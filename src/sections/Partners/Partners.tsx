@@ -4,7 +4,7 @@ import { tagData } from '../../data/tagData';
 import { partnersData } from './partnersData';
 import styles from '../Partners/Partners.module.css';
 
-const CountUp = ({ end, duration = 3000 }: { end: number; duration?: number }) => {
+const CountUp = ({ end, duration = 1000 }: { end: number; duration?: number }) => {
   const [value, setValue] = useState(0);
 
   useEffect(() => {
