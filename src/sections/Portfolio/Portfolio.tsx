@@ -23,7 +23,7 @@ const tabData: TabItem[] = [
   },
   {
     id: 'service',
-    label: '통합 유지보수',
+    label: '통합 유지 관리',
     content: <ServiceComponent />,
   },
 ];
